@@ -30,5 +30,68 @@
         <h2 class="display-2">Para sentirse pleno</h2>
       </div>
     </article>
-</section>  
+</section>
+<section class="seccion-carrusel">
+    <%# <div class="text-center fuente-personalizada altura-texto-5">Inscríbete y comienza tu transformación.</div> %>
+    <div class="text-center fuente-personalizada altura-texto-5">¡Líderes en bienestar!</div>
+    <article>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <%# <img src="https://picsum.photos/id/237/700/300" class="" alt="..."> %>
+            <%= image_tag("slide-1.jpg", class: "d-block w-100", size: "700x400", alt: "gym") %>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Excelentes Instalaciones</h3>
+              <p>Nuestra excelencia se refleja en nuestras instalaciones de primera clase. </p>
+              <p>¡Descubre el gimnasio que siempre soñaste!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <%# <img src="https://picsum.photos/id/238/700/300" class="d-block w-100" alt="..."> %>
+            <%= image_tag("slide-2.jpeg", class: "d-block w-100", size: "700x400", alt: "gym") %>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Personal capacitado</h5>
+              <p>Tu éxito es nuestro éxito.</p>
+              <p>Nuestro personal capacitado está listo para impulsarte hacia tus objetivos.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <%# <img src="https://picsum.photos/id/239/700/300" class="d-block w-100" alt="..."> %>
+            <%= image_tag("slide-3.jpg", class: "d-block w-100", size: "700x400", alt: "gym") %>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Horario Flexible</h3>
+              <p>En nuestro gimnasio, el tiempo nunca es un obstáculo.</p>
+              <p>Disfruta de horarios flexibles que se adaptan a tu vida.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <%# <img src="https://picsum.photos/id/240/700/300" class="d-block w-100" alt="..."> %>
+            <%= image_tag("slide-4.jpg", class: "d-block w-100", size: "700x400", alt: "gym") %>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Planes para todos</h3>
+              <p>Obtén más por menos.</p>
+              <p>Nuestros planes de membresía son la clave para una vida saludable sin comprometer tu presupuesto.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <%# <img src="https://picsum.photos/id/241/700/300" class="d-block w-100" alt="..."> %>
+            <%= image_tag("slide-5.jpg", class: "d-block w-100", size: "700x400", alt: "gym") %>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Programas de entrenamiento personalizados</h3>
+              <p>Tu viaje de acondicionamiento físico comienza con nosotros.</p>
+              <p>Nuestros entrenadores diseñan programas a medida para ti.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </article>
+  </section>
 </div>

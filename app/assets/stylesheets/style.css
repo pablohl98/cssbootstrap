@@ -8,6 +8,18 @@
 .color-blanco{
   color: white;
 }
+.altura-texto-5{
+  font-size: 5.5vh;
+}
+.altura-texto-4{
+  font-size: 4.3vh;
+}
+.altura-texto-3{
+  font-size: 3.2vh;
+}
+.fuente-personalizada{
+  font-family: 'Titillium Web', sans-serif;
+}
 /* Barra de navegacion */
 .navbar-nav {
     width: 100%;
@@ -26,7 +38,7 @@ a.nav-link:hover{
   display: flex;
   min-height: 80vh;
   background-image: url("https://picsum.photos/id/274/1280/720");
-  background-image: url('/assets/hero-image'); 
+  background-image: url('/assets/hero-image.jpg'); 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -48,6 +60,46 @@ a.nav-link:hover{
   font-family: 'Titillium Web', sans-serif;
   background-color: transparent;
 }
+/* Carrusel */
+.titulo-carrusel{
+  text-align: center;
+}
+.seccion-carrusel p,
+.seccion-carrusel h3{
+  font-family: 'Titillium Web', sans-serif;
+}
+.seccion-carrusel p {
+  margin-bottom: 0px;
+  font-size: 3.2vh;
+}
+.seccion-carrusel h3{
+  font-size: 4.3vh;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+.carousel-caption {
+  /* background-color: rgba(0, 0, 0, 0.7);  */
+  color: black; 
+  position: static;
+}
+.carousel { overflow: hidden; padding-bottom: 4rem; }
+.carousel-caption { top: 100%; }
+.carousel-inner { overflow: visible; }
+.carousel-control-next, .carousel-control-prev { 
+  bottom: 16rem;
+}
+.carousel-indicators{
+  bottom: 10rem;
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230000aa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+ 
+ .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230000aa' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+ }
 
 /********** Media Queries **********/
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
