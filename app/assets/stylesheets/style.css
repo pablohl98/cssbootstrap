@@ -60,7 +60,7 @@ a.nav-link:hover{
   font-family: 'Titillium Web', sans-serif;
   background-color: transparent;
 }
-/* Carrusel */
+/* Seccion Carrusel */
 .titulo-carrusel{
   text-align: center;
 }
@@ -77,7 +77,6 @@ a.nav-link:hover{
   text-decoration: underline;
   font-weight: bold;
 }
-
 
 .carousel-caption {
   /* background-color: rgba(0, 0, 0, 0.7);  */
@@ -100,35 +99,146 @@ a.nav-link:hover{
  .carousel-control-next-icon {
    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230000aa' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
  }
+/* Sección Experiencia */
+.experiencia{
+  margin-top: -79px;
+}
+.columna {
+  border: 1px solid #1b1b32;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.4s ease-in;
+  height: 565px;
+}
+.experiencia-titulo{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.experiencia p{
+  text-align: start;
+}
+.experiencia .icono-grande{
+  font-size: 2.5rem;
+  color: #7ade30;
+  background-color: #1b1b32;   
+  padding: 8px 19px;
+  border-radius: 60%;
+}
+.pfn {
+  padding-bottom: 24px;
+}
 
-/********** Media Queries **********/
-/* `sm` applies to x-small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-  
- }
-
-/* `md` applies to small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
-
-
- }
-
-/* `lg` applies to medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
-  .texto-div h2 {
-    font-size: calc(1.575rem + 3.9vw);
-    font-weight: 300;
-    line-height: 1.2;
+div.precio-contenedor {
+  margin-top: 34px;
+}
+.precio{
+  border: solid 3px #1b1b32;
+}
+.experiencia .columna:hover{
+  color: white;
+  background-color: #1b1b32;
+  .precio{
+    border: solid 3px #7ade30;
   }
- }
+}
 
-/* `xl` applies to large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
+.chec {
+  color: #52b208;
+}
 
- }
+.cross {
+  color: #e94107;
+}
 
+.precio-contenedor {
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.precio {
+  font-size: 18px;
+}
+/********** Media Queries **********/
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
+  .pfn{
+    padding-bottom: 24px;
+  }
+  div.precio-contenedor{
+    margin-top: 34px;
+  }
 
+}
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .pfn {
+   padding-bottom: 0px;
+   padding-top: 1px;
  }
+ .pfn2{
+  padding-bottom: 1px;
+ }
+ .pfn4{
+  padding-bottom: 23px;
+ }
+ div.precio-contenedor {
+   margin-top: 10px;
+ }
+ .experiencia .columna {
+   height: 615px;
+ }
+}
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+ /* .texto-div h2 {
+   font-size: calc(1.575rem + 3.9vw);
+   font-weight: 300;
+   line-height: 1.2;
+ } */
+ .pfn,
+ .pfn2 {
+   padding-bottom: 0px;
+   padding-top: 1px;
+ }
+ .pfn3{
+  padding-bottom: 24px;
+}
+.pfn4{
+  padding-bottom: 23px;
+}
+
+ /* .pfn2{
+  padding-bottom: 24px;
+  } */
+ div.precio-contenedor {
+   margin-top: 0px;
+ }
+ div.precio-contenedorsup {
+   margin-top: 16px;
+ }
+ .experiencia .columna {
+   height: 480px;
+ }
+}
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+.pfn3,
+.pfn5{
+  padding-bottom: 24px;
+ }
+ .experiencia .columna {
+   height: 420px;
+ }
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+ 
+}
 
