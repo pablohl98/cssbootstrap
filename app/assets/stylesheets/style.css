@@ -164,6 +164,66 @@ div.precio-contenedor {
 .precio {
   font-size: 18px;
 }
+/* Seccion contacto */
+.contacto .container{
+  border: solid 5px black;
+}
+.fuente-personalizada{
+  font-family: 'Titillium Web', sans-serif;
+}
+.align-items-stretch {
+  display: flex;
+  align-items: stretch;
+  height: 500px;
+}
+
+.lado-izq {
+  position: relative;
+  border-right: 5px solid black;
+}
+.lado-izq iframe {
+  aspect-ratio: 16 / 9;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%; 
+}
+/* .icono,
+.texto-icono,
+.direccion,
+.telefono,
+.email{
+  border: solid 2px black;
+} */
+.container2 i{
+  font-size: 65px;
+}
+.col-4 i {
+  font-size: 550%;
+}
+.col-8.texto-icono{
+  align-self: center;
+}
+.contenido {
+  flex: 1; 
+  border: 1px solid #000; 
+}
+.texto-icono{
+  justify-content: space-around;
+}
+.container2 span{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: underline;
+}
 /********** Media Queries **********/
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
@@ -225,6 +285,16 @@ div.precio-contenedor {
  .experiencia .columna {
    height: 480px;
  }
+ .contacto .container{
+  border: none;
+}
+.lado-izq{
+  border-right: none;
+  height: inherit;
+}
+.lado-der{
+  border: solid 5px black;
+}
 }
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
