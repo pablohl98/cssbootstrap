@@ -20,6 +20,10 @@
 .fuente-personalizada{
   font-family: 'Titillium Web', sans-serif;
 }
+.seccion-oscura{
+  color: white;
+  background-color: #1b1b32;
+}
 /* Barra de navegacion */
 .navbar-nav {
     width: 100%;
@@ -224,6 +228,46 @@ div.precio-contenedor {
   font-weight: bold;
   text-decoration: underline;
 }
+/* Footer */
+footer{
+  min-height: 100px;
+  margin-top: auto;
+}
+
+.footer-texto{
+  font-size: 1.5rem;
+  padding-top: 20px;
+  font-family: 'Titillium Web', sans-serif;
+}
+.iconos-redes-sociales a{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+.iconos-redes-sociales i{
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales a:hover{
+  background-color: white;
+  border: 2px solid rgb(13,110,253);
+}
+.iconos-redes-sociales a:hover i{
+  color: black;
+}
+.derechos-de-autor{
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
 /********** Media Queries **********/
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
@@ -233,7 +277,7 @@ div.precio-contenedor {
   div.precio-contenedor{
     margin-top: 34px;
   }
-
+  
 }
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
@@ -294,6 +338,9 @@ div.precio-contenedor {
 }
 .lado-der{
   border: solid 5px black;
+}
+footer{
+  margin-top: 380px;
 }
 }
 /* `md` applies to small devices (landscape phones, less than 768px) */
